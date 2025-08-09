@@ -1,0 +1,14 @@
+{{define "content"}}
+  <h1>Convert MOV to MP4</h1>
+  <p>Upload a .mov and we’ll convert it to .mp4.</p>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="video" accept=".mov" required />
+    <button type="submit">Convert to MP4</button>
+  </form>
+
+  {{if .OutputFile}}
+    <h2>Download</h2>
+    <a href="/uploads/{{.OutputFile}}" download>{{.OutputFile}}</a>
+  {{end}}
+{{end}}

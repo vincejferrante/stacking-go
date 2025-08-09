@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{.Title}}</title>
+  <meta name="description" content="{{.Description}}" />
+  <!-- GA snippet goes here later -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <a href="/">Stacking.app</a> · <a href="/tools/mov-to-mp4">MOV→MP4</a> · <a href="/tools/mov-to-gif">MOV→GIF</a>
+  </header>
+
+  {{block "content" .}}{{end}}
+
+  <footer>
+    <small>© {{.Year}} stacking.app</small>
+  </footer>
+</body>
+</html>

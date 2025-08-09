@@ -1,0 +1,14 @@
+{{define "content"}}
+  <h1>Convert MOV to GIF</h1>
+  <p>Upload a .mov and we’ll convert it to .gif.</p>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="video" accept=".mov" required />
+    <button type="submit">Convert to GIF</button>
+  </form>
+
+  {{if .OutputFile}}
+    <h2>Download</h2>
+    <a href="/uploads/{{.OutputFile}}" download>{{.OutputFile}}</a>
+  {{end}}
+{{end}}
