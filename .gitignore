@@ -1,4 +1,34 @@
+# Go build output
+/app
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Dependency directories
+vendor/
+
+# IDE/editor junk
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Logs
+*.log
+
+# Uploaded files (runtime only, not in git)
 uploads/
+
+# Docker build cache
+.dockerignore
+docker-compose.override.yml
+
+# Git
+.gituploads/
 *.log
 .DS_Store
 tempCodeRunnerFile.go
