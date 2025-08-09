@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: stacking-go
+    env: go
+    plan: "free"
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      go build -o app .
+    startCommand: ./app
+    autoDeploy: true
